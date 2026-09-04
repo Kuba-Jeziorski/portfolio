@@ -20,7 +20,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full pt-4 border-b border-b-slate-400/20">
+    <div className="w-full pt-4 border-b border-b-slate-400/20 h-nav-height fixed top-0 left-0">
       <div className="w-full max-w-375 mx-auto">
         <div className="w-full flex justify-end-safe gap-6">
           <div className="flex align-center gap-6">

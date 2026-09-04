@@ -19,6 +19,9 @@
   --color-muted-text: #94a3b8;
   --color-subtle-metadata: #64748b;
 
+  /* Spacing */
+  --spacing-nav-height: 64px;
+
   /* Breakpoints */
   /* --breakpoint-custom-1700: 1700px; */
 }
