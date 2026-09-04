@@ -3,6 +3,7 @@ import { Project } from "../domain/model";
 import Badges from "@/app/components/ui/badges";
 import Heading from "@/app/components/ui/heading";
 import Image from "next/image";
+import { divIdFormatter } from "@/app/utils/div-id-formatter";
 
 type Props = {
   project: Project;
@@ -20,8 +21,11 @@ export default function ProjectsItem({ project }: Props) {
   } = project;
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20">
-      <div className="w-full aspect-[2.1]">
+    <div
+      className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20"
+      id={divIdFormatter(name)}
+    >
+      <div className="w-full aspect-[2.1] group">
         {image ? (
           <Image
             src={image}
