@@ -5,6 +5,7 @@ export const justDance: Project = {
   description:
     "A dance school website featuring scroll-aware navigation, image sliders, animated statistics counters, and a contact form modal.",
   technologies: ["JS", "SCSS", "CSS", "HTML"],
+  image: "/just-dance.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/just-dance",
   date_range: "02.2023 - 04.2023",
 };

@@ -12,6 +12,7 @@ export const theOverlookDisplay: Project = {
     "CSS",
     "HTML",
   ],
+  image: "/the-overlook-display.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/the-overlook-display",
   date_range: "06.2024 - 07.2024",
 };

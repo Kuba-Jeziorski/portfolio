@@ -13,6 +13,7 @@ export const queryUsers: Project = {
     "Vite",
     "HTML",
   ],
+  image: "/query-users.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/query-users",
   date_range: "02.2025",
 };

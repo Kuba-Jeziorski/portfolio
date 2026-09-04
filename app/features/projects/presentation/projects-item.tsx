@@ -2,6 +2,7 @@ import Link from "@/app/components/ui/link";
 import { Project } from "../domain/model";
 import Badges from "@/app/components/ui/badges";
 import Heading from "@/app/components/ui/heading";
+import Image from "next/image";
 
 type Props = {
   project: Project;
@@ -12,7 +13,7 @@ export default function ProjectsItem({ project }: Props) {
     name,
     description,
     technologies,
-    // image,
+    image,
     date_range,
     github_url,
     live_url,
@@ -20,7 +21,19 @@ export default function ProjectsItem({ project }: Props) {
 
   return (
     <div className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20">
-      <div className="w-full aspect-video bg-red-50"></div>
+      <div className="w-full aspect-[2.1]">
+        {image ? (
+          <Image
+            src={image}
+            alt={name}
+            width={1920}
+            height={910}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-red-50"></div>
+        )}
+      </div>
       <div className="flex flex-1 flex-col p-4">
         <p className="text-muted-text text-sm">{date_range}</p>
         <Heading variant="h3" className="mb-2">

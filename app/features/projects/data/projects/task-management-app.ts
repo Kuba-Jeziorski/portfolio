@@ -19,6 +19,7 @@ export const taskManagementApp: Project = {
     "CSS",
     "HTML",
   ],
+  image: "/task-management-app.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/task-management-app",
   live_url: "https://matrix-inner.netlify.app/",
   date_range: "08.2025 - 03.2026",

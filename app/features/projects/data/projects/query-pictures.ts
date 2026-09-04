@@ -12,6 +12,7 @@ export const queryPictures: Project = {
     "TypeScript",
     "HTML",
   ],
+  image: "/query-pictures.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/query-pictures",
   date_range: "02.2025",
 };

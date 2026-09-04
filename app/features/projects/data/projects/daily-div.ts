@@ -14,6 +14,7 @@ export const dailyDiv: Project = {
     "CSS",
     "HTML",
   ],
+  image: "/daily-div.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/daily-div",
   date_range: "02.2025",
 };

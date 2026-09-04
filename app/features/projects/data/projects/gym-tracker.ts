@@ -19,6 +19,7 @@ export const gymTracker: Project = {
     "CSS",
     "HTML",
   ],
+  image: "/gym-tracker.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/gym-tracker",
   live_url: "https://gym-tracker-react.netlify.app/",
   date_range: "07.2026 - 03.2026",

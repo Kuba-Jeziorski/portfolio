@@ -1,6 +1,6 @@
 import { Project } from "../domain/model";
 
-import { expanseCalculator } from "./projects/expense-calculator";
+import { expenseCalculator } from "./projects/expense-calculator";
 import { travelEstimator } from "./projects/travel-estimator";
 import { fiveInALine } from "./projects/five-in-a-line";
 import { justDance } from "./projects/just-dance";
@@ -31,5 +31,5 @@ export const projects: Project[] = [
   travelEstimator,
   justDance,
   rgbHexConverter,
-  expanseCalculator,
+  expenseCalculator,
 ];

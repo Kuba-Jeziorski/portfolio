@@ -14,6 +14,7 @@ export const stockTracker: Project = {
     "CSS",
     "HTML",
   ],
+  image: "/stock-tracker.jpg",
   github_url: "https://github.com/Kuba-Jeziorski/stock-tracker",
   live_url: "https://react-stock-tracker.netlify.app/",
   date_range: "08.2026 - 09.2026",
