@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "./utils/css";
+import { cn } from "../../utils/css";
 
 const baseLinkClasses =
   "text-xl pb-4 border-b-3 transition-all duration-300 hover:text-primary-accent hover:border-b-primary-accent";
@@ -20,7 +20,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full pt-4 border-b border-b-slate-400/20 h-nav-height fixed top-0 left-0">
+    <div className="w-full bg-canvas-background pt-4 border-b border-b-slate-400/20 h-nav-height fixed top-0 left-0 shadow-[0_2px_4px_rgba(0,0,0,0.05)] z-50">
       <div className="w-full max-w-375 mx-auto">
         <div className="w-full flex justify-end-safe gap-6">
           <div className="flex align-center gap-6">

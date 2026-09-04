@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation } from "./navigation";
+import { Navigation } from "./components/layout/navigation";
 
 export const metadata: Metadata = {
   title: "Kuba-Jeziorski Portfolio",

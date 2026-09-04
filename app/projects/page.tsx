@@ -1,3 +1,5 @@
+import ProjectsContainer from "../features/projects/presentation/projects-container";
+
 export default function ProjectsPage() {
-  return <h1>Projects</h1>;
+  return <ProjectsContainer />;
 }
