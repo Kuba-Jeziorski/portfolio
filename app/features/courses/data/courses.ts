@@ -9,6 +9,6 @@ export const courses: Course[] = [
   courseReact,
   courseVue,
   courseTS,
-  courseJS,
   courseSCSS,
+  courseJS,
 ];
