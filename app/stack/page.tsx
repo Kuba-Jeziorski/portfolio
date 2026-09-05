@@ -1,3 +1,5 @@
+import StackContainer from "../features/stack/presentation/stack-container";
+
 export default function StackPage() {
-  return <h1>Stack</h1>;
+  return <StackContainer />;
 }

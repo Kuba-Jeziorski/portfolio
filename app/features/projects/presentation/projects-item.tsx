@@ -22,7 +22,7 @@ export default function ProjectsItem({ project }: Props) {
 
   return (
     <div
-      className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20"
+      className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20 bg-card-surface"
       id={divIdFormatter(name)}
     >
       <div className="w-full aspect-[2.1] group">
