@@ -7,7 +7,7 @@ export default function CvContainer() {
     <div className="w-full flex flex-col gap-4">
       <Heading variant="h1">CV</Heading>
       <div className="w-full grid grid-cols-2 gap-4">
-        <div className="flex items-stretch gap-4 rounded-2xl border border-slate-400/20 p-4">
+        <div className="flex items-stretch gap-4 rounded-2xl border border-slate-400/20 bg-card-surface p-4">
           <Image
             src="/cv-image.jpg"
             alt="Jakub Jeziorski"
@@ -30,6 +30,59 @@ export default function CvContainer() {
               <CustomLink url="/cv.pdf" isExternal={false}>
                 See details
               </CustomLink>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 rounded-2xl border border-slate-400/20 bg-card-surface p-4">
+          <Heading variant="h2">Basic information:</Heading>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-6">
+            <div className="flex items-center gap-2">
+              E-mail:{" "}
+              <a
+                href="mailto:jakub.m.jeziorski@gmail.com"
+                className="text-primary-accent transition-color inline-block duration-300 hover:text-gradient-accent"
+              >
+                jakub.m.jeziorski@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              Location: <span className="font-bold">Gdynia, Poland</span>
+            </div>
+            <div className="flex items-center gap-2">
+              Phone number:{" "}
+              <a
+                href="tel:+48784484976"
+                className="text-primary-accent transition-color inline-block duration-300 hover:text-gradient-accent"
+              >
+                +48 784 484 976
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              Birth date: <span className="font-bold">24.04.1996</span>
+            </div>
+            <div className="flex items-center gap-2">
+              LinkedIn:{" "}
+              <div className="flex">
+                <CustomLink
+                  url="https://www.linkedin.com/in/jakub-jeziorski-frontend/"
+                  isExternal
+                  className="px-2 py-1 text-sm rounded-lg"
+                >
+                  See more
+                </CustomLink>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              GitHub:{" "}
+              <div className="flex">
+                <CustomLink
+                  url="https://github.com/Kuba-Jeziorski"
+                  isExternal
+                  className="px-2 py-1 text-sm rounded-lg"
+                >
+                  See more
+                </CustomLink>
+              </div>
             </div>
           </div>
         </div>

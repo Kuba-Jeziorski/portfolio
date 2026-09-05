@@ -20,7 +20,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full bg-canvas-background pt-4 border-b border-b-slate-400/20 h-nav-height fixed top-0 left-0 shadow-[0_2px_4px_rgba(0,0,0,0.05)] z-50">
+    <nav className="w-full bg-canvas-background pt-4 border-b border-b-slate-400/20 h-nav-height fixed top-0 left-0 shadow-[0_2px_4px_rgba(0,0,0,0.05)] z-50">
       <div className="w-full max-w-375 mx-auto h-full">
         <div className="w-full flex justify-between gap-6 h-full">
           <Link
@@ -55,6 +55,6 @@ export const Navigation = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };

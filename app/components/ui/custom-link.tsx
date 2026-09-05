@@ -1,9 +1,11 @@
+import { cn } from "@/app/utils/css";
 import Link from "next/link";
 
 type Props = {
   children: React.ReactNode;
   url: string;
   isExternal?: boolean;
+  className?: string;
 };
 
 const linkClasses =
@@ -13,6 +15,7 @@ export default function CustomLink({
   children,
   url,
   isExternal = false,
+  className,
 }: Props) {
   return (
     <>
@@ -21,7 +24,7 @@ export default function CustomLink({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className={linkClasses}
+          className={cn(linkClasses, className)}
         >
           {children}
         </a>
@@ -30,7 +33,7 @@ export default function CustomLink({
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className={linkClasses}
+          className={cn(linkClasses, className)}
         >
           {children}
         </Link>

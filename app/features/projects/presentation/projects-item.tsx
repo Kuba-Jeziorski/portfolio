@@ -32,6 +32,7 @@ export default function ProjectsItem({ project }: Props) {
             alt={name}
             width={1920}
             height={910}
+            loading="eager"
             className="w-full h-full object-cover"
           />
         ) : (
