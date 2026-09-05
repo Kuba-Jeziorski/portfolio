@@ -29,7 +29,7 @@ export const Navigation = () => {
           >
             <div className="flex flex-col">
               <p className="text-2xl leading-none font-bold text-primary-accent">
-                Jakub Jeziorski
+                Kuba Jeziorski
               </p>
               <p className="text-xs tracking-[1.75] text-secondary-text">
                 Frontend developer
