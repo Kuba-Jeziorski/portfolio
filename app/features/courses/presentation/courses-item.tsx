@@ -1,0 +1,47 @@
+import Image from "next/image";
+import { Course } from "../domain/model";
+import Badges from "@/app/components/ui/badges";
+import Link from "@/app/components/ui/link";
+import Heading from "@/app/components/ui/heading";
+
+type Props = {
+  course: Course;
+};
+
+export default function CoursesItem({ course }: Props) {
+  const { name, icon, description, certificate_url, stack } = course;
+
+  return (
+    <div className="flex flex-col overflow-hidden rounded-2xl border border-slate-400/20 bg-card-surface p-4">
+      <div className="flex items-center gap-4 mb-4">
+        {icon && (
+          <div className="w-15 h-15 rounded-xl bg-secondary-text p-2 flex items-center justify-center">
+            <div className="relative w-full h-full">
+              <Image
+                src={icon}
+                fill
+                alt={`${name}`}
+                className="h-full w-full object-contain"
+              />
+            </div>
+          </div>
+        )}
+        <Heading variant="h3" className="flex-1 max-w-4/5 text-balance mb-0">
+          {name}
+        </Heading>
+      </div>
+      <p className="text-secondary-text mb-4">{description}</p>
+      {stack.length > 0 && (
+        <div className="flex gap-2 mb-6">
+          <p className="pt-0.5">Stack:</p>
+          <div className="flex flex-1 flex-wrap gap-2 mb-4">
+            <Badges badges={stack} />
+          </div>
+        </div>
+      )}
+      <div className="flex align-items-center gap-4 mt-auto">
+        <Link url={certificate_url}>Certificate</Link>
+      </div>
+    </div>
+  );
+}
