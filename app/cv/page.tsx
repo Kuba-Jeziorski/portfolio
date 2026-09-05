@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Heading from "../components/ui/heading";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kuba-Jeziorski Portfolio | CV",
+  description: "Basic informations about Kuba Jeziorski",
+};
 
 export default function CvPage() {
   return (
