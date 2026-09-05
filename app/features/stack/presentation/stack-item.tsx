@@ -11,8 +11,17 @@ export default function StackItem({ tool }: Props) {
 
   return (
     <div className="w-full flex items-center justify-between gap-3 py-5 border-b border-b-slate-400/20 last:border-b-0">
-      <div className="flex items-center gap-2">
-        {icon && <Image src={icon} width={36} height={36} alt={`${name}`} />}
+      <div className="flex items-center gap-4">
+        {icon && (
+          <div className="relative w-9 h-9">
+            <Image
+              src={icon}
+              fill
+              alt={`${name}`}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        )}
         {name && <p className="text-xl">{name}</p>}
       </div>
       <div className="flex flex-col items-end gap-1 text-secondary-text">

@@ -2,5 +2,5 @@ import { Tool } from "../../domain/model";
 
 export const toolKafka: Tool = {
   name: "Kafka",
-  icon: "/icon-react.svg",
+  icon: "/icon-kafka.svg",
 };

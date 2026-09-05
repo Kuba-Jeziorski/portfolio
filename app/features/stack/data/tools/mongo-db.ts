@@ -2,6 +2,6 @@ import { Tool } from "../../domain/model";
 
 export const toolMongoDB: Tool = {
   name: "MongoDB",
-  icon: "/icon-react.svg",
+  icon: "/icon-mongodb.svg",
   status: "Ongoing",
 };

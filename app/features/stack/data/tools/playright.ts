@@ -2,5 +2,5 @@ import { Tool } from "../../domain/model";
 
 export const toolPlaywright: Tool = {
   name: "Playwright",
-  icon: "/icon-react.svg",
+  icon: "/icon-playwright.svg",
 };
