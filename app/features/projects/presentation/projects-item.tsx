@@ -1,4 +1,4 @@
-import Link from "@/app/components/ui/link";
+import CustomLink from "@/app/components/ui/custom-link";
 import { Project } from "../domain/model";
 import Badges from "@/app/components/ui/badges";
 import Heading from "@/app/components/ui/heading";
@@ -48,8 +48,14 @@ export default function ProjectsItem({ project }: Props) {
         </div>
         <p className="text-secondary-text mb-8">{description}</p>
         <div className="flex align-items-center gap-4 mt-auto">
-          <Link url={github_url}>Repository</Link>
-          {live_url && <Link url={live_url}>Live Demo</Link>}
+          <CustomLink url={github_url} isExternal>
+            Repository
+          </CustomLink>
+          {live_url && (
+            <CustomLink url={live_url} isExternal>
+              Live Demo
+            </CustomLink>
+          )}
         </div>
       </div>
     </div>

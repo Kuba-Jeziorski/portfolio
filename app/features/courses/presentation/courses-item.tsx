@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Course } from "../domain/model";
 import Badges from "@/app/components/ui/badges";
-import Link from "@/app/components/ui/link";
+import CustomLink from "@/app/components/ui/custom-link";
 import Heading from "@/app/components/ui/heading";
 
 type Props = {
@@ -40,7 +40,7 @@ export default function CoursesItem({ course }: Props) {
         </div>
       )}
       <div className="flex align-items-center gap-4 mt-auto">
-        <Link url={certificate_url}>Certificate</Link>
+        <CustomLink url={certificate_url}>Certificate</CustomLink>
       </div>
     </div>
   );
